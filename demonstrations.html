@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez les démonstrations de sites web et d'applications réalisés par Ing Arnold Winamou.">
+  <title>Mes démonstrations | Ing Arnold Winamou</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f8fc;
+      color: #17243b;
+      line-height: 1.6;
+    }
+    header {
+      background: #10264a;
+      color: white;
+      padding: 24px 18px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; }
+    main {
+      width: min(100% - 32px, 1000px);
+      margin: 36px auto;
+    }
+    .intro { text-align: center; margin-bottom: 30px; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 14px;
+      border: 1px solid #e0e7f0;
+      box-shadow: 0 5px 18px #10264a0c;
+    }
+    .card h2 { margin-top: 0; }
+    .tag {
+      display: inline-block;
+      background: #e7f0ff;
+      color: #174b91;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+    .button {
+      display: inline-block;
+      background: #1765c0;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .back { text-align: center; margin: 32px 0; }
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #10264a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mes démonstrations</h1>
+    <p>Ing Arnold Winamou — Développement numérique</p>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h2>Découvrez mes projets</h2>
+      <p>Explorez mes exemples de sites web et d'applications numériques.</p>
+    </div>
+
+    <div class="projects">
+      <article class="card">
+        <span class="tag">Site web</span>
+        <h2>Site vitrine</h2>
+        <p>Un exemple de présentation professionnelle pour une activité ou une entreprise.</p>
+        <a class="button" href="#contact">Découvrir</a>
+      </article>
+
+      <article class="card">
+        <span class="tag">Application web</span>
+        <h2>Application interactive</h2>
+        <p>Un espace pour présenter des interfaces et des fonctionnalités web.</p>
+        <a class="button" href="#contact">Découvrir</a>
+      </article>
+
+      <article class="card">
+        <span class="tag">Projet numérique</span>
+        <h2>Projet en développement</h2>
+        <p>De nouvelles démonstrations pourront être ajoutées au fil de mes réalisations.</p>
+        <a class="button" href="#contact">Me contacter</a>
+      </article>
+    </div>
+
+    <div class="back" id="contact">
+      <p>Un projet numérique en tête ? Parlons-en.</p>
+      <a class="button" href="index.html#contact">Contacter Ing Arnold</a>
+      <p><a href="index.html">← Retour à l'accueil</a></p>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Ing Arnold Winamou
+  </footer>
+</body>
+</html>
