@@ -147,6 +147,8 @@ h2 em {
   background: #f0f2ed;
 }
 
+
+
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -301,5 +303,32 @@ footer p {
 
 .menu-info p {
   margin-bottom: 12px;
+}
+
+
+
+
+.menu-photo-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.button-food-images {
+  display: flex;
+  gap: 7px;
+}
+
+.button-food-images img {
+  width: 85px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
