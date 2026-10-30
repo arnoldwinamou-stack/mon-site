@@ -1,0 +1,276 @@
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fafaf8;
+  color: #252925;
+  line-height: 1.7;
+}
+
+.header {
+  min-height: 78px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  border-bottom: 1px solid #eaece8;
+}
+
+.logo {
+  color: #202820;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #49664e;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #454a45;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #49664e;
+}
+
+.header-btn,
+.main-btn {
+  display: inline-block;
+  background: #34533b;
+  color: #fff;
+  padding: 12px 22px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.header-btn:hover,
+.main-btn:hover {
+  background: #263f2d;
+}
+
+.hero {
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  background:
+    linear-gradient(90deg, rgba(15,25,18,.85), rgba(15,25,18,.25)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600")
+    center/cover;
+  color: white;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.eyebrow {
+  color: #a9c2a8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+h1 em,
+h2 em {
+  color: #66896a;
+  font-style: normal;
+}
+
+.hero h1 em {
+  color: #d5e2d3;
+}
+
+.hero-content > p:not(.eyebrow) {
+  color: #f0f0ec;
+  max-width: 500px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.about,
+.menu-section,
+.reservation {
+  padding: 80px 9%;
+  text-align: center;
+}
+
+.about h2,
+.menu-section h2,
+.reservation h2 {
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.25;
+  margin-bottom: 22px;
+}
+
+.about > p:last-child,
+.reservation > p:not(.eyebrow) {
+  max-width: 680px;
+  margin: auto;
+  color: #666c66;
+}
+
+.menu-section {
+  background: #f0f2ed;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.menu-card {
+  background: #fff;
+  padding: 32px 24px;
+  border: 1px solid #e7eae5;
+  border-radius: 5px;
+}
+
+.food-icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.menu-card h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.menu-card p {
+  color: #747a73;
+  margin-bottom: 14px;
+}
+
+.menu-card span {
+  color: #49664e;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #777;
+  margin-top: 22px;
+}
+
+.reservation form {
+  max-width: 520px;
+  margin: 35px auto 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reservation label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.reservation input,
+.reservation select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9ded7;
+  background: #fff;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.reservation input:focus,
+.reservation select:focus {
+  outline: 2px solid #8da68e;
+  border-color: #49664e;
+}
+
+.reservation form .main-btn {
+  margin-top: 15px;
+}
+
+#formMessage {
+  color: #34533b;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer {
+  background: #202820;
+  color: #e4e8e2;
+  text-align: center;
+  padding: 38px 20px;
+}
+
+footer .logo {
+  color: #fff;
+}
+
+footer p {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 60px 7%;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about,
+  .menu-section,
+  .reservation {
+    padding: 60px 7%;
+  }
+
+  .header-btn {
+    display: none;
+  }
+}
