@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maison Impériale, restaurant gastronomique à Niamey. Découvrez notre cuisine et réservez votre table.">
+  <title>Maison Impériale | Restaurant à Niamey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">MAISON <span>IMPÉRIALE</span></a>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">Notre histoire</a>
+      <a href="#menu">Menu</a>
+      <a href="#reservation">Réservation</a>
+    </nav>
+    <a href="#reservation" class="header-btn">Réserver</a>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">L'EXCELLENCE CULINAIRE À NIAMEY</p>
+        <h1>Une expérience<br>gastronomique <em>unique.</em></h1>
+        <p>Découvrez une cuisine raffinée où chaque plat raconte une histoire et chaque instant devient un souvenir.</p>
+        <a href="#menu" class="main-btn">Découvrir notre menu</a>
+      </div>
+    </section>
+
+    <section class="about" id="apropos">
+      <p class="eyebrow">BIENVENUE CHEZ NOUS</p>
+      <h2>L'art de recevoir,<br><em>le plaisir de partager.</em></h2>
+      <p>Maison Impériale vous accueille dans un cadre élégant et chaleureux à Niamey. Notre ambition : vous offrir une cuisine généreuse, un service attentionné et une expérience inoubliable.</p>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <p class="eyebrow">NOTRE SÉLECTION</p>
+      <h2>Découvrez notre <em>menu</em></h2>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="food-icon">🥗</div>
+          <h3>Entrées</h3>
+          <p>Des créations fraîches pour éveiller vos papilles.</p>
+          <span>À partir de 3 500 FCFA</span>
+        </article>
+
+        <article class="menu-card">
+          <div class="food-icon">🍛</div>
+          <h3>Plats principaux</h3>
+          <p>Une sélection de plats savoureux et généreux.</p>
+          <span>À partir de 7 500 FCFA</span>
+        </article>
+
+        <article class="menu-card">
+          <div class="food-icon">🍰</div>
+          <h3>Desserts</h3>
+          <p>Une touche sucrée pour terminer en beauté.</p>
+          <span>À partir de 2 500 FCFA</span>
+        </article>
+      </div>
+      <p class="disclaimer">Tarifs indicatifs pour cette démonstration.</p>
+    </section>
+
+    <section class="reservation" id="reservation">
+      <p class="eyebrow">VOTRE TABLE VOUS ATTEND</p>
+      <h2>Réservez votre <em>moment.</em></h2>
+      <p>Remplissez le formulaire pour enregistrer une demande de réservation.</p>
+
+      <form id="reservationForm">
+        <label for="name">Nom complet</label>
+        <input type="text" id="name" placeholder="Votre nom" required>
+
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" placeholder="Votre numéro" required>
+
+        <label for="date">Date souhaitée</label>
+        <input type="date" id="date" required>
+
+        <label for="guests">Nombre de personnes</label>
+        <select id="guests" required>
+          <option value="">Choisir</option>
+          <option>1 personne</option>
+          <option>2 personnes</option>
+          <option>3 personnes</option>
+          <option>4 personnes</option>
+          <option>5 personnes</option>
+          <option>6 personnes ou plus</option>
+        </select>
+
+        <button type="submit" class="main-btn">Envoyer ma demande</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo">MAISON <span>IMPÉRIALE</span></a>
+    <p>Restaurant de démonstration · Niamey, Niger</p>
+    <p>© 2026 Maison Impériale. Tous droits réservés.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
